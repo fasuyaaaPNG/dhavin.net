@@ -268,7 +268,7 @@ console.log(search_form);
 function createHome(){
 
   var homeDiv = document.createElement('div');
-        homeDiv.innerHTML = '<div class="home_container"><h2>I am hungry</h2><p>Shall we go eat?</p><div class="close_home" href="">x</div></div>';
+        homeDiv.innerHTML = '<div class="home_container"><h2>Redirect.......</h2><p>Waiting response</p><div class="close_home" href="">x</div></div>';
         homeDiv.setAttribute('class', 'home');
         document.body.appendChild(homeDiv);
 
@@ -285,7 +285,7 @@ var navigationLink = $('.terminal__line a');
 
 navigationLink.click(function(e){
   if ($(this).hasClass('out')) {
-    window.open('http://instagram.com/arcticben.co.uk');
+    // window.open('http://instagram.com/arcticben.co.uk');
   }else
   {
   createHome();
@@ -299,20 +299,23 @@ navigationLink.click(function(e){
 
     createHome();
 
-	  } else if ( $( "input" ).val() === "instagram" ) {
-				window.open('http://instagram.com/arcticben.co.uk');
+	  } else if ( $( "input" ).val() === "info" ) {
+				window.open('http://info.dhavin.net');
+  		}
+      else if ( $( "input" ).val() === "main" ) {
+				window.open('http://main.dhavin.net');
   		} else if ($( "input" ).val() === "ipconfig") {
 
-        var binder = $('input').val();
-        var terminal_div = document.getElementsByClassName('terminal');
-            $('.terminal').addClass("binding");
-        var theipagain = $('#ip').html();
+        // var binder = $('input').val();
+        // var terminal_div = document.getElementsByClassName('terminal');
+        //     $('.terminal').addClass("binding");
+        // var theipagain = $('#ip').html();
 
-        var ipconfig = document.createElement('p');
-              $(ipconfig).text('ipconfig: ' + theipagain);
-              ipconfig.setAttribute('class', 'terminal__line');
-              $(ipconfig).appendTo(terminal_div);
-              console.log(ipconfig.length);
+        // var ipconfig = document.createElement('p');
+        //       $(ipconfig).text('ipconfig: ' + theipagain);
+        //       ipconfig.setAttribute('class', 'terminal__line');
+        //       $(ipconfig).appendTo(terminal_div);
+        //       console.log(ipconfig.length);
 
       }
 
