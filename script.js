@@ -302,8 +302,8 @@ navigationLink.click(function(e){
 	  } else if ( $( "input" ).val() === "info" ) {
 				window.open('http://info.dhavin.net');
   		}
-      else if ( $( "input" ).val() === "main" ) {
-				window.open('http://main.dhavin.net');
+      else if ( $( "input" ).val() === "tree" ) {
+				window.open('http://tree.dhavin.net');
   		} else if ($( "input" ).val() === "ipconfig") {
 
         // var binder = $('input').val();
